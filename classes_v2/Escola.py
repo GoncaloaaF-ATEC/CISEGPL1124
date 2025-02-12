@@ -51,6 +51,37 @@ class Escola:
     def add_professor(self, professor:Professor):
         pass
 
+    def melhorNota(self, ufcd:str = None, aluno:Aluno = None):
+        pass
+
+    def piorNota(self, ufcd:str = None, aluno:Aluno = None):
+        pass
+
+
+
+    def piorMedia(self, ufcd: str = None, aluno: Aluno = None, aprovado:bool = True):
+        """
+        Lista os alunos com pior media
+
+        :param aporvado:
+            - True para listar os alunos aprovados,
+            - False para listar os alunos reprovados,
+
+        um Aluno aprovado e um aluno com media >= 10
+
+        """
+        pass
+
+    def melhorMedia(self, ufcd: str = None, aluno: Aluno = None):
+        pass
+
+
+    def __int__(self):
+
+        return len(self.lista_alunos)
+        #return self.lista_alunos.__len__()
+
+
 
     def lancarNota(self,
                    nota:float,

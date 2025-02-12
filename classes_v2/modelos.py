@@ -16,6 +16,7 @@ class Nota:
     ufcd: str
     nota: float
     professor: Professor
+    aluno: "Aluno"
 
 
 @dataclass
@@ -37,6 +38,7 @@ class Aluno(Pessoa):
         return None
 
     def add_notas(self, nota:Nota):
+        nota.aluno = self
         self.notas.append(nota)
 
 

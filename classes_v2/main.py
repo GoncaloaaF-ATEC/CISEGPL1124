@@ -36,3 +36,13 @@ registar professores
     email
 
 """
+
+
+from Escola import Escola
+
+
+
+es = Escola('Escola Secundaria de Vila Nova de Gaia', [], [])
+
+
+print(es.__dir__())
